@@ -4,6 +4,19 @@
  <form method = "post" action= "test.php">
    <input type= 'submit'>
  </form>
+ <?php
+  $db_server = "ecs.fullerton.edu"
+  $db_user_name = "cs332a43"
+  $db_pass = "password"
+  $db_name = "cs332a43"
+
+  $db_conn = new mysqli($db_server_name, $db_user_name, $db_pass, $db_name);
+
+if($db_conn->connect_error)
+{
+  die("Failed to connect to database: " . $db_conn->connect_error);
+}
+ ?>
   test </body>
 
 </html>
