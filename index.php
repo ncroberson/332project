@@ -16,6 +16,10 @@ if($db_conn->connect_error)
 {
   die("Failed to connect to database: " . $db_conn->connect_error);
 }
+else
+{
+  <div> connection successful </div>
+}
  ?>
   test </body>
 
