@@ -18,7 +18,7 @@ if($db_conn->connect_error)
 }
 else
 {
-  <div> connection successful </div>
+  echo "<div> connection successful </div>"
 }
  ?>
   test </body>
