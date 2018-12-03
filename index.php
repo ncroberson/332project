@@ -1,14 +1,17 @@
 <html>
 <head></head>
 <body>
- <form method = "post" action= "test.php">
-   <input type= 'submit'>
- </form>
+  <form action="professor.php">
+  <input type="submit" value="Professor">
+  </form>
+  <form action="student.php">
+  <input type="submit" value="Student">
+  </form>
  <?php
   $db_server = "localhost";
   $db_user_name = "cs332a37";
   $db_pass = "shoonang";
-  $db_name = "cs332a43";
+  $db_name = "cs332a37";
 
   $db_conn = new mysqli($db_server_name, $db_user_name, $db_pass, $db_name);
 
