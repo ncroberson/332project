@@ -1,11 +1,11 @@
 <?php
 $sql = "SELECT * FROM  courses";
-$output_string = generate_results($sql, $db_conn);
+$query = mysqli_query($db_conn, $sql) or die("Could not search");;
  ?>
 
  <html>
   <body>
-    <div> <?php $output_string ?> </div>
+    <div> <?php $query ?> </div>
    </body>
 
 
